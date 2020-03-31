@@ -3,16 +3,15 @@ const express = require('express');
 const app = express();
 
 
-// config del servidor
-app.set('port', process.env.PORT || 3000); // puerto
+
+app.set('port', process.env.PORT || 3000); // config del puerto
 
 
-// middlewares
 app.use(express.json()); // para manejar json's
 
 
-// rutas
-app.use(require('./routes/state'));
+// rutas de la api
+app.use(require('./api/src/routes/state')); // retornara el ultimo registro de la BD
 
 
 // inicializando el servidor

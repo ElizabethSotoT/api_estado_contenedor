@@ -1,5 +1,5 @@
 /**
- * Archivo para la Base de datos
+ * Archivo de conexion a la BD
  */
 
 const mysql = require('mysql');
