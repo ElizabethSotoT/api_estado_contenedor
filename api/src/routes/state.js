@@ -1,9 +1,9 @@
-// Archivo de config de ruta para obtener el ultimo registro/estado de la BD
+// Archivo de ruta para obtener el ultimo registro de la BD
 
 const express = require('express');
 const router = express.Router();
 
-const mysqlConnection = require('../../db/DB'); // importa el archivo de conexion a la BD
+const mysqlConnection = require('../db/DB'); // importa el archivo de conexion a la BD
 
 // crear la ruta principal/inicial de la app
 router.get('/', (req, res) => {
